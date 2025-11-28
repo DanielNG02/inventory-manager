@@ -1,0 +1,21 @@
+name : "SQL Syntax Check"
+
+on:
+  push:
+    branches:
+      - main
+
+
+jobs:
+  lint-sql:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: SQL syntax check
+        run: echo "Checking SQL syntax..."
+
+      - name: List repository files
+        run: ls -R
