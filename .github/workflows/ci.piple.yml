@@ -3,8 +3,7 @@ name : "SQL Syntax Check"
 on:
   push:
     branches:
-      - main
-
+      - master
 
 jobs:
   lint-sql:
