@@ -16,6 +16,9 @@ INSERT INTO products (name, quantity, price, last_updated) VALUES
 
 SELECT name, price 
 FROM products
+
+SELECT name, price 
+FROM products
 WHERE price > 100.00;
 
 UPDATE products
